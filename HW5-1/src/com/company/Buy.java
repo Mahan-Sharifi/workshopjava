@@ -47,7 +47,8 @@ public class Buy {
       public void Accepting(){
         System.out.println("The buying was successful");
         system.out.println("Good Luck");
-    
+      }
+    }
     
     
     
