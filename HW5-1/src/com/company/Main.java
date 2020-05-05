@@ -55,25 +55,30 @@ public class Main {
                 e1.Saveinformation();
 
                 break;
+                
             case "2":
+                System.out.println("Please enter your productName");
                 try {
                     e2.setProductName(input.next());
                 }
                 catch (BuyExeption e){
                     e.PrintstackRace();
                 }
+                System.out.println("Please enter your productInformation");
                 try {
                     e2.setProductInformation(input.next());
                 }
                 catch (BuyExeption e){
                     e.PrintStackRace();
                 }
+                System.out.println("Please enter your productPrice");
                 try {
                     e2.setProductPrice(input.next());
                 }
                 catch (BuyExeption e){
                     e.PrintStackRace();
                 }
+                System.out.println("Please enter your productWeight");
                 try {
                     e2.setProductWeight(input.next());
                 }
