@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         Employee e1=new Employee();
+        Buy e2=new Buy();
         Scanner input = new Scanner(System.in);
         System.out.println("برای استخدام عدد < 1 >\nخرید محصول < 2 >      \nفروش محضول < 3 >      ");
         String x=input.nextLine();
@@ -55,7 +56,32 @@ public class Main {
 
                 break;
             case "2":
-
+                try {
+                    e2.setProductName(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintstackRace();
+                }
+                try {
+                    e2.setProductInformation(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintStackRace();
+                }
+                try {
+                    e2.setProductPrice(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintStackRace();
+                }
+                try {
+                    e2.setProductWeight(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintSTackRace();
+                }
+                e2.information();
+                
                 break;
 
             case "3":
