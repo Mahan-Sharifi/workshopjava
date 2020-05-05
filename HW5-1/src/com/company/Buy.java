@@ -24,10 +24,11 @@ public class Buy {
       throw new BuyExeption("Didn't enter your ProductInformation");
     }
     else
-      ProductName=productname;
+      ProductInformation=productInformation;
   }
   public String getProductPrice(){
     return ProductPrice;
+  }
   public void setProductPrice(String productPrice)throws BuyExeption{
     if(productPrice.isEmpty){
       throw new BuyExeption("Didn't enter your ProductPrice");
@@ -37,12 +38,13 @@ public class Buy {
   }
     public String getProductWeight(){
       return ProductWeight;
+    }
     public void setProductWeight(String productWeight)throws BuyExeption{
       if(productWeight.isEmpty){
         throw new BuyExeption("Didn't enter your ProductWeight");
       }
       else
-        ProductPrice=productprice;
+        ProductWeight=productWeight;
     }
       public void Accepting(){
         System.out.println("The buying was successful");
