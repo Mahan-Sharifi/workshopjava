@@ -18,6 +18,7 @@ public class Sale {
   
   public String getProductPrice(){
     return ProductPrice;
+  }
   public void setProductPrice(String productPrice)throws SaleExeption{
     if(productPrice.isEmpty){
       throw new SaleExeption("Didn't enter your ProductPrice");
@@ -27,15 +28,16 @@ public class Sale {
   }
     public String getProductWeight(){
       return ProductWeight;
+    }
     public void setProductWeight(String productWeight)throws SaleExeption{
       if(productWeight.isEmpty){
         throw new SaleExeption("Didn't enter your ProductWeight");
       }
       else
-        ProductPrice=productprice;
+        ProductWeight=productWeight;
     }
       public void Accepting(){
         System.out.println("The Saling was successful");
         system.out.println("Good Luck");
-    
+      }
 }
