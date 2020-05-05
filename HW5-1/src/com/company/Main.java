@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Employee e1=new Employee();
         Buy e2=new Buy();
+        Sale e3=new Sale();
         Scanner input = new Scanner(System.in);
         System.out.println("برای استخدام عدد < 1 >\nخرید محصول < 2 >      \nفروش محضول < 3 >      ");
         String x=input.nextLine();
@@ -85,11 +86,34 @@ public class Main {
                 catch (BuyExeption e){
                     e.PrintSTackRace();
                 }
-                e2.information();
+                e2.Accepting();
                 
                 break;
 
             case "3":
+                
+                System.out.println("Please enter your productName");
+                try {
+                    e3.setProductName(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintstackRace();
+                }
+                System.out.println("Please enter your productPrice");
+                try {
+                    e3.setProductPrice(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintStackRace();
+                }
+                System.out.println("Please enter your productWeight");
+                try {
+                    e3.setProductWeight(input.next());
+                }
+                catch (BuyExeption e){
+                    e.PrintSTackRace();
+                }
+                e3.Accepting();
 
                 break;
 
